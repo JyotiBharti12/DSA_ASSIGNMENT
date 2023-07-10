@@ -13,8 +13,8 @@ public class LongestHarmoniousSubsequence
 		{
 		freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
 		}
-	// Iterate over the numbers and check for harmonious 
-		subsequence for (int num : freqMap.keySet()) 
+	// Iterate over the numbers and check for harmonious subsequence 
+		for (int num : freqMap.keySet()) 
 		{
 			if (freqMap.containsKey(num + 1)) 
 			{
@@ -33,4 +33,5 @@ public class LongestHarmoniousSubsequence
 	longestSubsequenceLength);
 	}
 } 
+
 
